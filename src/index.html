@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tutorial de Programación en Java</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🚀 Tutorial Completo de Programación en Java</h1>
+
+<p>
+Ciclos • Métodos • Vectores • Matrices • Listas • Manejo de Archivos
+</p>
+
+<p>
+Autor: Dayana Chasi
+</p>
+
+</header>
+
+<nav>
+
+<a href="#ciclos">Ciclos</a>
+<a href="#metodos">Métodos</a>
+<a href="#vectores">Vectores</a>
+<a href="#listas">Listas</a>
+<a href="#archivos">Archivos</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🎯 Objetivo</h2>
+
+<p>
+Este tutorial tiene como objetivo enseñar los conceptos básicos de programación 
+en Java mediante explicaciones sencillas, ejemplos prácticos y ejercicios resueltos. 
+Se abordan temas como ciclos, métodos, vectores, matrices, listas y manejo de archivos, 
+con el fin de desarrollar habilidades de lógica y programación para resolver problemas y 
+crear programas básicos.
+</p>
+
+</div>
+
+<div class="card" id="ciclos">
+
+<h2>🔄 Ciclos</h2>
+
+<h3>¿Qué son?</h3>
+
+<p>
+Un ciclo es una estructura que permite ejecutar una o varias instrucciones de forma repetitiva 
+hasta que se cumpla una condición específica.
+</p>
+
+<h3>Tipos</h3>
+
+<ul>
+<li>for</li>
+<li>while</li>
+<li>do while</li>
+</ul>
+
+<h3>Ejemplo FOR</h3>
+
+<pre>
+for(int i=1;i<=5;i++){
+
+    System.out.println(i);
+
+}
+</pre>
+<h3>📎 Código fuente</h3>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/CicloFor.java" target="_blank">
+Ver código completo de CicloFor.java
+</a>
+
+<h3>Errores comunes</h3>
+
+<ul>
+<li>Ciclos infinitos.</li>
+<li>No incrementar variables.</li>
+<li>Condiciones incorrectas.</li>
+</ul>
+
+<h3>Aplicaciones</h3>
+
+<p>
+Videojuegos, sistemas bancarios, inventarios.
+</p>
+
+</div>
+
+<div class="card" id="metodos">
+
+<h2>🛠 Métodos</h2>
+
+<p>
+Los métodos son partes de un programa que se utilizan para realizar una tarea específica. 
+Permiten reutilizar código varias veces sin necesidad de volver a escribirlo, lo que hace 
+que los programas sean más organizados, fáciles de entender y de mantener.
+</p>
+
+<pre>
+public static int sumar(int a,int b){
+
+    return a+b;
+
+}
+</pre>
+<h3>📎 Código fuente</h3>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/Metodos.java" target="_blank">
+Ver código completo de Metodos.java
+</a>
+
+<h3>Ventajas</h3>
+
+<ul>
+<li>Organizan el código.</li>
+<li>Evitan repetición.</li>
+<li>Facilitan mantenimiento.</li>
+</ul>
+
+</div>
+
+<div class="card" id="vectores">
+
+<h2>📊 Vectores y Matrices</h2>
+
+<h3>Vector</h3>
+<p>
+
+Un vector es una lista de datos almacenados en una sola variable,
+donde cada dato tiene una posición específica.
+</p>
+
+<pre>
+int[] numeros={10,20,30,40,50};
+</pre>
+
+<h3>Matriz</h3>
+<p>
+Una matriz es una tabla de datos organizada en filas y columnas, 
+similar a una hoja de cálculo.   
+</p>
+<pre>
+int[][] matriz={
+ {1,2,3},
+ {4,5,6},
+ {7,8,9}
+};
+</pre>
+<h3>📎 Código fuente Vector</h3>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/Vector.java" target="_blank">
+Ver código completo de Vector.java
+</a>
+
+<br><br>
+
+<h3>📎 Código fuente Matriz</h3>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/Matriz.java" target="_blank">
+Ver código completo de Matriz.java
+</a>
+
+<table>
+
+<tr>
+<th>Vector</th>
+<th>Matriz</th>
+</tr>
+
+<tr>
+<td>1 dimensión</td>
+<td>2 dimensiones</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card" id="listas">
+
+<h2>📋 Listas (ArrayList)</h2>
+<p>
+Un ArrayList es una lista que permite guardar varios datos y agregar 
+o eliminar elementos fácilmente sin definir un tamaño fijo.   
+</p>
+<pre>
+ArrayList<String> nombres = new ArrayList<>();
+</pre>
+<h3>📎 Código fuente</h3>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/Lista.java" target="_blank">
+Ver código completo de Lista.java
+</a>
+
+<h3>Métodos importantes</h3>
+
+<ul>
+<li>add()</li>
+<li>remove()</li>
+<li>get()</li>
+<li>set()</li>
+<li>contains()</li>
+</ul>
+
+</div>
+
+<div class="card" id="archivos">
+
+<h2>📂 Manejo de Archivos</h2>
+
+<p>
+El manejo de archivos permite guardar, leer y modificar información de 
+forma permanente en un dispositivo de almacenamiento.
+</p>
+
+<pre>
+FileWriter archivo = new FileWriter("datos.txt");
+</pre>
+<h3>📎 Código fuente</h3>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/LeerArchivo.java" target="_blank">
+Ver código de lectura de archivos
+</a>
+
+<br><br>
+
+<a href="https://github.com/dayanachasi/TAREA_OPCIONAL/blob/main/src/EscribirArchivo.java" target="_blank">
+Ver código de escritura de archivos
+</a>
+
+<h3>Aplicaciones reales</h3>
+
+<ul>
+<li>Bancos.</li>
+<li>Facturación.</li>
+<li>Inventarios.</li>
+<li>Control de usuarios.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📚 Glosario</h2>
+
+<ul>
+<li>Variable</li>
+<li>Clase</li>
+<li>Método</li>
+<li>Objeto</li>
+<li>Vector</li>
+<li>Matriz</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❓ Autoevaluación</h2>
+
+<ol>
+
+<li>¿Qué diferencia existe entre for y while?</li>
+
+<li>¿Qué es un parámetro?</li>
+
+<li>¿Qué es un ArrayList?</li>
+
+<li>¿Qué es una matriz?</li>
+
+<li>¿Para qué sirve FileWriter?</li>
+
+</ol>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Tutorial de Programación en Java</h3>
+
+<p>Proyecto GitHub Pages</p>
+
+</footer>
+
+</body>
+</html>
